@@ -5,83 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tipos de botão</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <h2 class="title">Tipos de botão</h2>
-    <p class="sub-title">
-      Dentro de um layout, botões servem para destacar ações importantes a serem
-      tomadas. Acompanhe abaixo um exemplo de tipos e propriedades.
-    </p>
+  <body class="d-flex">
+    <main>
+      <h2 class="title">Tipos de botão</h2>
+      <p class="sub-title">
+        Dentro de um layout, botões servem para destacar ações importantes a
+        serem tomadas. Acompanhe abaixo um exemplo de tipos e propriedades.
+      </p>
 
-    <table>
-      <tr class="headers">
-        <th></th>
-        <th>botão primário</th>
-        <th>botão secundário</th>
-        <th>botão terciário</th>
-        <th>cursor</th>
-      </tr>
+      <div class="headers d-flex space-between">
+        <p>botão primário</p>
+        <p>botão secundário</p>
+        <p>botão terciário</p>
+        <p>cursor</p>
+      </div>
 
-      <tr id="default-btns">
-        <td class="side-title">default</td>
-        <td><button class="btn primary default">default primary</button></td>
-        <td>
+      <div class="container d-flex space-evenly">
+        <div id="side-titles" class="d-flex align-center flex-col space-around">
+          <p class="side-title">disabled</p>
+          <p class="side-title">default</p>
+          <p class="side-title">hover</p>
+          <p class="side-title">focus</p>
+          <p class="side-title">loading</p>
+          <p class="side-title">movable</p>
+        </div>
+
+        <div
+          id="primary-btns"
+          class="d-flex flex-col align-center space-between p gap"
+        >
+          <button class="btn primary default">default primary</button>
+          <button class="btn primary hover">hover primary</button>
+          <button class="btn primary focus">focus primary</button>
+          <button class="btn primary disabled">disabled primary</button>
+          <button class="btn primary loading">loading primary</button>
+          <button class="btn primary movable">movable primary</button>
+        </div>
+
+        <div
+          id="secondary-btns"
+          class="d-flex flex-col align-center ml-7 space-between p gap"
+        >
           <button class="btn secondary default">default secondary</button>
-        </td>
-        <td><button class="btn terciary default">default terciary</button></td>
-        <td><img src="./img/pointer.png" alt="" /></td>
-      </tr>
-
-      <tr id="hover-btns">
-        <td class="side-title">hover</td>
-        <td><button class="btn primary hover">hover primary</button></td>
-        <td><button class="btn secondary hover">hover secondary</button></td>
-        <td><button class="btn terciary hover">hover terciary</button></td>
-        <td><img src="./img/pointer.png" alt="" /></td>
-      </tr>
-
-      <tr id="focus-btns">
-        <td class="side-title">focus</td>
-        <td><button class="btn primary focus">focus primary</button></td>
-        <td><button class="btn secondary focus">focus secondary</button></td>
-        <td><button class="btn terciary focus">focus terciary</button></td>
-        <td><img src="./img/pointer.png" alt="" /></td>
-      </tr>
-
-      <tr id="disabled-btns">
-        <td class="side-title">disabled</td>
-        <td><button class="btn primary disabled">disabled primary</button></td>
-        <td>
+          <button class="btn secondary hover">hover secondary</button>
+          <button class="btn secondary focus">focus secondary</button>
           <button class="btn secondary disabled">disabled secondary</button>
-        </td>
-        <td>
-          <button class="btn terciary disabled">disabled terciary</button>
-        </td>
-        <td><img src="./img/pointer-disabled.png" alt="" /></td>
-      </tr>
-
-      <tr id="loading-btns">
-        <td class="side-title">loading</td>
-        <td><button class="btn primary loading">loading primary</button></td>
-        <td>
           <button class="btn secondary loading">loading secondary</button>
-        </td>
-        <td><button class="btn terciary loading">loading terciary</button></td>
-        <td><img src="./img/pointer-load.png" alt="" /></td>
-      </tr>
-
-      <tr id="movable-btns">
-        <td class="side-title">movable</td>
-        <td><button class="btn primary movable">movable primary</button></td>
-        <td>
           <button class="btn secondary movable">movable secondary</button>
-        </td>
-        <td><button class="btn terciary movable">movable terciary</button></td>
-        <td><img src="./img/pointer-move.png" alt="" /></td>
-      </tr>
-    </table>
+        </div>
 
-    <section class="test-btns">
+        <div
+          id="terciary-btns"
+          class="d-flex flex-col align-center ml-7 space-between p gap"
+        >
+          <button class="btn terciary default">default terciary</button>
+          <button class="btn terciary hover">hover terciary</button>
+          <button class="btn terciary focus">focus terciary</button>
+          <button class="btn terciary disabled">disabled terciary</button>
+          <button class="btn terciary loading">loading terciary</button>
+          <button class="btn terciary movable">movable terciary</button>
+        </div>
+
+        <div
+          id="pointers"
+          class="d-flex flex-col align-center ml-7 space-between p gap"
+        >
+          <img src="./img/pointer.png" alt="" />
+          <img src="./img/pointer.png" alt="" />
+          <img src="./img/pointer-disabled.png" alt="" />
+          <img src="./img/pointer-disabled.png" alt="" />
+          <img src="./img/pointer-load.png" alt="" />
+          <img src="./img/pointer-move.png" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <section id="test-btns">
       <h2 class="title">Teste os botões</h2>
       <p class="sub-title">
         Interaja com os botões e observe a mudança de aparência e de cursores
