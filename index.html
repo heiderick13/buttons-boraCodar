@@ -12,69 +12,79 @@
       <h2 class="title">Tipos de botão</h2>
       <p class="sub-title">
         Dentro de um layout, botões servem para destacar ações importantes a
-        serem tomadas. Acompanhe abaixo um exemplo de tipos e propriedades.
+        serem tomadas. <br />
+        Acompanhe abaixo um exemplo de tipos e propriedades.
       </p>
 
       <div class="headers d-flex space-between">
         <p>botão primário</p>
-        <p>botão secundário</p>
-        <p>botão terciário</p>
+        <p class="ml-3">botão secundário</p>
+        <p class="ml-3">botão terciário</p>
         <p>cursor</p>
       </div>
 
       <div class="container d-flex space-evenly">
         <div id="side-titles" class="d-flex align-center flex-col space-around">
-          <p class="side-title">disabled</p>
           <p class="side-title">default</p>
           <p class="side-title">hover</p>
           <p class="side-title">focus</p>
+          <p class="side-title">disabled</p>
           <p class="side-title">loading</p>
           <p class="side-title">movable</p>
         </div>
 
         <div
           id="primary-btns"
-          class="d-flex flex-col align-center space-between p gap"
+          class="d-flex flex-col align-center ml-2 space-between p gap-2"
         >
           <button class="btn primary default">default primary</button>
           <button class="btn primary hover">hover primary</button>
           <button class="btn primary focus">focus primary</button>
           <button class="btn primary disabled">disabled primary</button>
-          <button class="btn primary loading">loading primary</button>
-          <button class="btn primary movable">movable primary</button>
+          <button class="btn primary loading d-flex align-center gap-1">
+            <img src="img/load.png" alt="" />loading primary
+          </button>
+          <button class="btn primary movable d-flex align-center gap-1">
+            <img src="img/move.png" alt="" />movable primary
+          </button>
         </div>
 
         <div
           id="secondary-btns"
-          class="d-flex flex-col align-center ml-7 space-between p gap"
+          class="d-flex flex-col align-center ml-2 space-between p gap-2"
         >
           <button class="btn secondary default">default secondary</button>
           <button class="btn secondary hover">hover secondary</button>
           <button class="btn secondary focus">focus secondary</button>
           <button class="btn secondary disabled">disabled secondary</button>
-          <button class="btn secondary loading">loading secondary</button>
-          <button class="btn secondary movable">movable secondary</button>
+          <button class="btn secondary loading d-flex align-center gap-1">
+            <img src="img/load.png" alt="" />loading secondary
+          </button>
+          <button class="btn secondary movable d-flex align-center gap-1">
+            <img src="img/move.png" alt="" />movable secondary
+          </button>
         </div>
 
         <div
           id="terciary-btns"
-          class="d-flex flex-col align-center ml-7 space-between p gap"
+          class="d-flex flex-col align-center ml-2 space-between p gap-2"
         >
           <button class="btn terciary default">default terciary</button>
           <button class="btn terciary hover">hover terciary</button>
           <button class="btn terciary focus">focus terciary</button>
           <button class="btn terciary disabled">disabled terciary</button>
-          <button class="btn terciary loading">loading terciary</button>
-          <button class="btn terciary movable">movable terciary</button>
+          <button class="btn terciary loading d-flex align-center gap-1">
+            <img src="img/load.png" alt="" />loading terciary
+          </button>
+          <button class="btn terciary movable d-flex align-center gap-1">
+            <img src="img/move.png" alt="" />movable terciary
+          </button>
         </div>
 
-        <div
-          id="pointers"
-          class="d-flex flex-col align-center ml-7 space-between p gap"
-        >
+        <div id="pointers" class="d-flex flex-col align-center ml-2 p gap-2">
           <img src="./img/pointer.png" alt="" />
           <img src="./img/pointer.png" alt="" />
-          <img src="./img/pointer-disabled.png" alt="" />
+          <img src="./img/pointer.png" alt="" />
           <img src="./img/pointer-disabled.png" alt="" />
           <img src="./img/pointer-load.png" alt="" />
           <img src="./img/pointer-move.png" alt="" />
@@ -82,11 +92,18 @@
       </div>
     </main>
 
-    <section id="test-btns">
+    <section id="test-btns" class="d-flex flex-col">
       <h2 class="title">Teste os botões</h2>
       <p class="sub-title">
         Interaja com os botões e observe a mudança de aparência e de cursores
       </p>
+      <div class="btns d-flex flex-col align-center space-around">
+        <button class="btn primary default">interaja comigo</button>
+        <button class="btn secondary default">interaja comigo</button>
+        <button class="btn terciary loading d-flex align-center gap-1">
+          <img src="img/move.png" alt="" />loading terciary
+        </button>
+      </div>
     </section>
   </body>
 </html>

@@ -13,7 +13,7 @@ body * {
 
 body {
   background-color: #0b0911;
-  padding: 5rem;
+  padding: 4rem 3rem 0;
   color: #fefefe;
   position: relative;
 }
@@ -46,16 +46,37 @@ body {
   justify-content: space-evenly;
 }
 
-.align-center {
-  align-items: center;
+.gap-1 {
+  gap: 0.5rem;
 }
 
-.gap {
-  gap: 1.5rem;
+.gap-2 {
+  gap: 2rem;
 }
 
-.ml-7 {
-  margin-left: 7rem;
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+
+.sub-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ccc;
+  content: fit-content;
+  padding-bottom: 4rem;
 }
 
 .container {
@@ -69,7 +90,7 @@ body {
 
 .headers,
 .side-title {
-  color: #ffffff;
+  color: #ccc;
   padding: 1.2rem;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
@@ -77,19 +98,20 @@ body {
 }
 
 .headers {
+  text-align: center;
   background-color: #1c162c;
-  padding-left: 13rem;
+  padding-left: 12.5rem;
 }
 
 .side-title {
-  width: 150px;
+  width: 100px;
   text-align: center;
-  /* padding: 1.5rem; */
 }
 
 .btn {
+  border: none;
   border-radius: 5rem;
-  padding: 1.2rem;
+  padding: 0.8rem 1.1rem;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -98,15 +120,62 @@ body {
 
 .primary {
   background-color: #8257e5;
-
   color: white;
   border: none;
 }
 
+.primary.hover {
+  background-color: #9674e5;
+}
+
+.secondary {
+  background-color: #3c3748;
+}
+
+.secondary.hover {
+  background-color: #6a617f;
+}
+
+.terciary {
+  background-color: transparent;
+}
+
+.focus {
+  border: 2px solid #fefefe;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loading {
+  cursor: wait;
+}
+
+.movable {
+  cursor: move;
+}
+
 #test-btns {
+  width: 350px;
   height: 100vh;
+  padding: 4rem 2rem 2rem;
   position: absolute;
   right: 0;
   top: 0;
   background-color: #1c162c;
+}
+
+.btns {
+  height: 300px;
+  width: 100%;
+}
+
+.btns .btn {
+  width: 100%;
+}
+
+.btns .terciary {
+  justify-content: center;
 }
