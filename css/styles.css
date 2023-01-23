@@ -116,6 +116,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
+  transition: all 0.2s;
 }
 
 .primary {
@@ -174,6 +175,20 @@ body {
 
 .btns .btn {
   width: 100%;
+}
+
+.btns .primary:focus,
+.btns .secondary:focus,
+.btns .terciary:focus {
+  border: 2px solid #fefefe;
+}
+
+.btns .primary:hover {
+  background-color: #9674e5;
+}
+
+.btns .secondary:hover {
+  background-color: #6a617f;
 }
 
 .btns .terciary {

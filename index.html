@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tipos de botão</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
   </head>
   <body class="d-flex">
     <main>
@@ -100,8 +101,11 @@
       <div class="btns d-flex flex-col align-center space-around">
         <button class="btn primary default">interaja comigo</button>
         <button class="btn secondary default">interaja comigo</button>
-        <button class="btn terciary loading d-flex align-center gap-1">
-          <img src="img/move.png" alt="" />loading terciary
+        <button
+          id="movableBtn"
+          class="btn terciary movable d-flex align-center gap-1"
+        >
+          <img src="img/move.png" alt="" />interaja comigo
         </button>
       </div>
     </section>
