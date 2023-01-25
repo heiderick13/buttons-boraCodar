@@ -13,7 +13,7 @@ body * {
 
 body {
   background-color: #0b0911;
-  padding: 4rem 3rem 0;
+  padding: 2rem 2rem 0;
   color: #fefefe;
   position: relative;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .gap-2 {
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .ml-2 {
@@ -72,11 +72,11 @@ body {
 
 .sub-title {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
   color: #ccc;
   content: fit-content;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .container {
@@ -113,7 +113,7 @@ body {
   border-radius: 5rem;
   padding: 0.8rem 1.1rem;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
   transition: all 0.2s;
@@ -161,7 +161,7 @@ body {
 #test-btns {
   width: 350px;
   height: 100vh;
-  padding: 4rem 2rem 2rem;
+  padding: 2rem;
   position: absolute;
   right: 0;
   top: 0;
